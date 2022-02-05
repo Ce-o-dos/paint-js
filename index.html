@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint two</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/791234b726.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="tools">
+
+        <input type="button" value="Descargar" id="descargar">
+
+        <div class="select">
+            
+            <div class="container-number">
+
+
+                <label for="alto-canva">Alto</label>
+                <input type="number" id="alto-canva">
+
+                <label for="alto-canva">Ancho</label>
+                <input type="number" id="ancho-canva">
+
+                <input type="button" value="change" id="change">
+            </div>
+        </div>
+
+
+        <div class="herramientas">
+            <span>Herramientas</span>
+            <button id="lapiz"><i class="fas fa-pencil-alt"></i></button>
+            <button id="pincel"><i class="fas fa-paint-brush"></i></button>
+        </div>
+
+        <!--Grosor lapiz-->
+        <div class="lapiz-grosor">
+            <div class="select-range">
+                <p>Tamaño</p>
+                <input type="range" id="line" min="10" max="100" step="5" value="10" list="tickmarks">
+            </div>
+            
+        </div>
+
+        <!--Colores-->
+        <div class="container-color">
+            <input type="color" value="#ff0000" id="color">
+        </div>
+
+        
+        
+    </div>
+
+
+
+    <canvas id="canvas"></canvas>
+
+    <h6 id="coordenadas" class="coordenadas-mouse"> </h6>
+
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+</html>

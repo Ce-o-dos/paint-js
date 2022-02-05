@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.tools{
+    width: 70%;
+    background-color: gainsboro;
+    margin: 20px;
+    height: 190px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+#color{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 0px solid black;
+}
+
+.lapiz-grosor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#line{
+    width: 200px;
+    height: 10px;
+    color: brown;
+    border: 1px solid black;
+}
+
+input[type='range']{
+    -webkit-appearance: none;
+    background-color: white;
+}
+
+
+.herramientas{
+    width: 150px;
+    height: 75%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.herramientas span{
+    position: absolute;
+    top: 42px;
+}
+
+.herramientas button{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 1px solid black;
+}
+
+.herramientas .fa-pencil-alt, .fa-paint-brush{
+    font-size: 1.3rem;
+}
+
+.select{
+    width: 150px;
+    height: 80%;
+    border: 1px solid black;
+}
+
+.container-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-number input[type="button"]{
+    width: 70%;
+    height: 25px;
+    margin-top: 9px;
+}
+
+#medidas{
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+}
+
+#descargar{
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+}
+
+/*Canvas*/
+
+
+#canvas{
+    border: 2px solid black;
+    margin: 20px;
+}
+
+
+
+.coordenadas-mouse{
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+
+
