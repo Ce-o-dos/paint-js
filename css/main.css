@@ -5,6 +5,13 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdecde;
+}
 
 .tools{
     width: 70%;
@@ -107,6 +114,7 @@ input[type='range']{
 #canvas{
     border: 2px solid black;
     margin: 20px;
+    background-color: white;
 }
 
 
@@ -117,5 +125,10 @@ input[type='range']{
     font-size: 20px;
 }
 
-
+@media (max-width: 425px) {
+    .tools{
+        flex-direction: column;
+        height: 600px;
+    }
+}
 
